@@ -1,0 +1,22 @@
+body {
+    height: 100vh;
+    margin:0;
+    background-color: #eee;
+}
+
+header {
+    height: 20vh;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
