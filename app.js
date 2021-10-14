@@ -16,7 +16,7 @@ const renderData = data => {
     data.map(value =>  {
         console.log(value);
         const item = document.createElement('li');
-        item.innerHTML = `<img src="https://live.staticflickr.com/${value.server}/${value.id}_${value.secret}_w.jpg"> <h2>${value.title}</h2> <p>${text}</p>`;
+        item.innerHTML = `<img src="https://live.staticflickr.com/${value.server}/${value.id}_${value.secret}_w.jpg"> <h2>${value.title}</h2> <p>${text}</p> <p>${text}</p>`;
         lista.appendChild(item);
     });
 }

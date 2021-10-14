@@ -21,21 +21,18 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    border-radius: 1.4rem;
     background-color: black;
 }
 
 .bar button {
-    width: 100%;
+    width:22%;
     height: 3rem;
-    border-radius: 1.4rem;
-    background-color: white;
+    background-color: #eee;
 }
 
 .bar button:hover{
     background-color: black;
-    color:white;
+    color:#eee;
 }
 
 main {
@@ -49,18 +46,28 @@ main {
     list-style: none;
     display: flex;
     flex-direction: column;
+    gap:0.5rem;
 }
 
 .lista img{
+    width:40%;
+    height:40vh;
     float:left;
 }
 
 .lista h2 {
+    margin-left: 45%;
+    text-decoration:underline ;
+}
+
+.lista p {
+    margin-left: 45%;
+    margin-top: 5%;
 }
 
 footer{
     height: 15vh;
     margin-top: auto;
     background-color: black;
-    color:white;
+    color:#eee;
 }
