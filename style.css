@@ -72,9 +72,13 @@ footer{
     margin-top: auto;
     background-color: black;
     color:#eee;
+    text-align: center;
 }
 
 @media screen and (max-width: 480px) {
+    body{
+        margin:0;
+    }
     main {
         display: flex;
         flex-direction: column;
@@ -86,6 +90,7 @@ footer{
     }
     
     .lista h2 {
+        font-size: 18px;
         margin-left: 0;
         margin-top: 0;
     }
