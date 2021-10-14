@@ -1,9 +1,10 @@
 const square = document.querySelector('#square');
 const lista = document.querySelector('.lista');
+const text = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia aspernatur voluptatem doloribus accusamus eligendi sed.';
 
 const fetchData = async () => {
 
-    const res = await fetch('https://www.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=fae3b5188605557014e24bd343d2256e&gallery_id=72157719791154473&format=json&nojsoncallback=1');
+    const res = await fetch('https://www.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=86f5aee678c32a645d9a6f2acb61490f&gallery_id=72157719791154473&format=json&nojsoncallback=1');
     
     const result = await res.json();
 
@@ -15,7 +16,7 @@ const renderData = data => {
     data.map(value =>  {
         console.log(value);
         const item = document.createElement('li');
-        item.innerHTML = `<img src="https://live.staticflickr.com/${value.server}/${value.id}_${value.secret}_w.jpg">`;
+        item.innerHTML = `<img src="https://live.staticflickr.com/${value.server}/${value.id}_${value.secret}_w.jpg"> <h2>${value.title}</h2> <p>${text}</p>`;
         lista.appendChild(item);
     });
 }

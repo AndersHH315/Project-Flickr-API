@@ -26,7 +26,15 @@ header h1 {
     background-color: black;
 }
 
-.bar a{
+.bar button {
+    width: 100%;
+    height: 3rem;
+    border-radius: 1.4rem;
+    background-color: white;
+}
+
+.bar button:hover{
+    background-color: black;
     color:white;
 }
 
@@ -34,6 +42,20 @@ main {
     border: solid black 2px;
     display: flex;
     flex-direction: row;
+}
+
+.lista {
+    width:940px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.lista img{
+    float:left;
+}
+
+.lista h2 {
 }
 
 footer{
