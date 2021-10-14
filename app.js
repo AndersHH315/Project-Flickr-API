@@ -4,7 +4,7 @@ const text = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia asp
 
 const fetchData = async () => {
 
-    const res = await fetch('https://www.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=86f5aee678c32a645d9a6f2acb61490f&gallery_id=72157719791154473&format=json&nojsoncallback=1');
+    const res = await fetch('https://www.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=50d1e27317722c6d444caed9935fc912&gallery_id=72157719791154473&format=json&nojsoncallback=1');
     
     const result = await res.json();
 
